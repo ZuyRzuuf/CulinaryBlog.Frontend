@@ -1,42 +1,46 @@
-// pages/recipe/[id].tsx
 import React from 'react';
-import Layout from '../../components/Layout';
+import Layout from '@/components/Layout';
+import { GetServerSideProps, GetServerSidePropsContext } from 'next';
+import { Recipe } from '@/types/recipe';
+import mockRecipesData from '@/data_mocks/recipes.json';
 
-const RecipePage = () => {
+interface RecipePageProps {
+    recipe: Recipe;
+}
+
+const RecipePage: React.FC<RecipePageProps> = ({ recipe }) => {
     return (
         <Layout>
             <section className="my-16">
                 {/* Recipe Header */}
                 <div className="mb-8">
-                    <h1 className="text-3xl font-bold">Delicious Recipe Title</h1>
+                    <h1 className="text-3xl font-bold">{recipe.title}</h1>
                     <div className="text-sm text-gray-500 mt-2">
-                        <span>By Author Name</span>
+                        <span>By {recipe.author.username}</span>
                         <span> • </span>
-                        <span>Posted on February 25, 2023</span>
+                        <span>Posted on {recipe.publishedDate}</span>
                         <span> • </span>
-                        <span>Category: Desserts</span>
+                        <span>Category: {recipe.category.name}</span>
                     </div>
                 </div>
 
                 {/* Image Gallery */}
                 <div className="mb-8">
-                    <img src="path/to/main-image.jpg" alt="Main recipe image" className="w-full h-96 object-cover mb-4" />
-                    <div className="flex space-x-2">
-                        <img src="path/to/thumbnail-1.jpg" alt="Thumbnail 1" className="w-24 h-24 object-cover" />
-                        <img src="path/to/thumbnail-2.jpg" alt="Thumbnail 2" className="w-24 h-24 object-cover" />
-                        <img src="path/to/thumbnail-3.jpg" alt="Thumbnail 3" className="w-24 h-24 object-cover" />
-                    </div>
+                    <img
+                        src={recipe.imageUrl}
+                        alt={`Main image for ${recipe.title}`}
+                        className="w-full h-96 object-cover mb-4"
+                    />
+                    {/* Add thumbnail images if needed */}
                 </div>
 
                 {/* Ingredients */}
                 <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-4">Ingredients</h2>
                     <ul className="list-disc pl-8">
-                        <li>1 cup all-purpose flour</li>
-                        <li>1/2 cup unsalted butter, softened</li>
-                        <li>1/2 cup granulated sugar</li>
-                        <li>1 large egg</li>
-                        <li>1 teaspoon vanilla extract</li>
+                        {recipe.ingredients.map((ingredient, index) => (
+                            <li key={index}>{ingredient.name}</li>
+                        ))}
                     </ul>
                 </div>
 
@@ -44,11 +48,9 @@ const RecipePage = () => {
                 <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-4">Instructions</h2>
                     <ol className="list-decimal pl-8">
-                        <li>Preheat oven to 350°F (180°C).</li>
-                        <li>In a large bowl, cream together butter and sugar until smooth.</li>
-                        <li>Add the egg and vanilla extract, and mix well.</li>
-                        <li>Gradually stir in the flour, mixing until just combined.</li>
-                        <li>Drop dough by rounded tablespoons onto a parchment-lined baking sheet.</li>
+                        {recipe.instructions.map((instruction, index) => (
+                            <li key={index}>{instruction}</li>
+                        ))}
                     </ol>
                 </div>
 
@@ -60,6 +62,23 @@ const RecipePage = () => {
             </section>
         </Layout>
     );
+};
+
+export const getServerSideProps: GetServerSideProps<RecipePageProps> = async (
+    context: GetServerSidePropsContext
+) => {
+    const recipeId = context.params?.id;
+    const recipe = mockRecipesData.find((recipe) => recipe.id === recipeId);
+
+    if (!recipe) {
+        return {
+            notFound: true,
+        };
+    }
+
+    return {
+        props: { recipe },
+    };
 };
 
 export default RecipePage;
