@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
 import { Article } from '@/types/article';
 import mockArticlesData from '@/data_mocks/articles.json';
+import BackToList from "@/components/BackToList";
 
 interface ArticlePageProps {
     article: Article;
@@ -12,6 +13,8 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ article }) => {
     return (
         <Layout>
             <section className="my-16">
+                <BackToList href="/articles" />
+
                 {/* Article Image */}
                 <div className="mb-8">
                     <img

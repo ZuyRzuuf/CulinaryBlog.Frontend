@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 import { Recipe } from '@/types/recipe';
 import mockRecipesData from '@/data_mocks/recipes.json';
+import BackToList from "@/components/BackToList";
 
 interface RecipePageProps {
     recipe: Recipe;
@@ -12,6 +13,8 @@ const RecipePage: React.FC<RecipePageProps> = ({ recipe }) => {
     return (
         <Layout>
             <section className="my-16">
+                <BackToList href="/recipes" />
+
                 {/* Recipe Header */}
                 <div className="mb-8">
                     <h1 className="text-3xl font-bold">{recipe.title}</h1>
