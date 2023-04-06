@@ -1,7 +1,15 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '@/components/Layout';
+import { GetServerSideProps } from "next";
+import { Article } from '@/types/article';
+import mockArticlesData from '../data_mocks/articles.json';
+import ArticleList from "@/components/ArticleList";
 
-const ArticlesPage = () => {
+interface ArticleListProps {
+    articles: Article[];
+}
+
+const ArticlesPage: React.FC<ArticleListProps> = ({ articles }) => {
     return (
         <Layout>
             <section className="my-16">
@@ -14,7 +22,7 @@ const ArticlesPage = () => {
 
                 {/* Article List */}
                 <div>
-                    {/* Add article list items here */}
+                    <ArticleList articles={articles} />
                 </div>
 
                 {/* Pagination */}
@@ -24,6 +32,16 @@ const ArticlesPage = () => {
             </section>
         </Layout>
     );
+};
+
+export const getServerSideProps: GetServerSideProps<ArticleListProps> = async () => {
+    const articles = mockArticlesData;
+
+    return {
+        props: {
+            articles,
+        },
+    };
 };
 
 export default ArticlesPage;
