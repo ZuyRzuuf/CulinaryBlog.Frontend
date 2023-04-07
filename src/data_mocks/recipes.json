@@ -1,0 +1,165 @@
+[
+  {
+    "id": "1",
+    "title": "Spaghetti Carbonara",
+    "ingredients": [
+      {
+        "id": "1",
+        "name": "spaghetti"
+      },
+      {
+        "id": "2",
+        "name": "eggs"
+      },
+      {
+        "id": "3",
+        "name": "bacon"
+      },
+      {
+        "id": "4",
+        "name": "cheese"
+      },
+      {
+        "id": "5",
+        "name": "garlic"
+      }
+    ],
+    "instructions": [
+      "Boil water for spaghetti.",
+      "Cook spaghetti according to package instructions.",
+      "Meanwhile, whisk eggs and cheese together in a bowl.",
+      "Cook bacon in a pan, then add garlic.",
+      "Drain spaghetti and add to the pan with bacon and garlic.",
+      "Remove pan from heat and stir in egg mixture.",
+      "Serve immediately."
+    ],
+    "author": {
+      "id": "1",
+      "username": "john_doe"
+    },
+    "publishedDate": "2023-04-08",
+    "category": {
+      "id": "1",
+      "name": "Pasta"
+    },
+    "cuisine": {
+      "id": "2",
+      "name": "Italian"
+    },
+    "diet": {
+      "id": "3",
+      "name": "Traditional"
+    },
+    "method": {
+      "id": "4",
+      "name": "Boiling"
+    },
+    "season": {
+      "id": "5",
+      "name": "All Seasons"
+    },
+    "comments": [
+      {
+        "id": "1",
+        "content": "This is my favorite pasta dish!",
+        "author": {
+          "id": "2",
+          "username": "jane_doe"
+        },
+        "createdAt": "2023-04-09"
+      }
+    ],
+    "imageUrl": "/images/recipes/1/main.jpeg",
+    "tags": [
+      {
+        "id": "1",
+        "name": "Pasta"
+      },
+      {
+        "id": "2",
+        "name": "Italian"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Vegetarian Stir Fry",
+    "ingredients": [
+      {
+        "id": "6",
+        "name": "vegetables"
+      },
+      {
+        "id": "7",
+        "name": "rice"
+      },
+      {
+        "id": "8",
+        "name": "soy sauce"
+      },
+      {
+        "id": "9",
+        "name": "garlic"
+      },
+      {
+        "id": "10",
+        "name": "ginger"
+      }
+    ],
+    "instructions": [
+      "Cook rice according to package instructions.",
+      "Heat oil in a wok or large skillet.",
+      "Add vegetables and stir-fry for a few minutes.",
+      "Add garlic and ginger, continue to stir-fry.",
+      "Add cooked rice and soy sauce, mix well.",
+      "Serve immediately."
+    ],
+    "author": {
+      "id": "1",
+      "username": "john_doe"
+    },
+    "publishedDate": "2023-04-10",
+    "category": {
+      "id": "6",
+      "name": "Main Course"
+    },
+    "cuisine": {
+      "id": "7",
+      "name": "Asian"
+    },
+    "diet": {
+      "id": "8",
+      "name": "Vegetarian"
+    },
+    "method": {
+      "id": "9",
+      "name": "Stir Frying"
+    },
+    "season": {
+      "id": "5",
+      "name": "All Seasons"
+    },
+    "comments": [
+      {
+        "id": "3",
+        "content": "So simple and delicious! Thanks for sharing.",
+        "author": {
+          "id": "2",
+          "username": "jane_doe"
+        },
+        "createdAt": "2023-04-11"
+      }
+    ],
+    "imageUrl": "images/recipes/2/main.jpeg",
+    "tags": [
+      {
+        "id": "3",
+        "name": "Vegetarian"
+      },
+      {
+        "id": "4",
+        "name": "Stir Fry"
+      }
+    ]
+  }
+]

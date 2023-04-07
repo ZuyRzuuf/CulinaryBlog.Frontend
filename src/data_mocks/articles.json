@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "title": "Exploring the Flavors of Thai Cuisine",
+    "imageUrl": "/images/articles/1/main.jpeg",
+    "content": "Thai cuisine is known for its bold flavors...",
+    "author": {
+      "id": "1",
+      "username": "john_doe"
+    },
+    "publishedDate": "2023-04-10",
+    "tags": [
+      {
+        "id": "1",
+        "name": "Thai"
+      },
+      {
+        "id": "2",
+        "name": "Cuisine"
+      }
+    ],
+    "comments": [
+      {
+        "id": "1",
+        "content": "Great article! I love Thai food.",
+        "author": {
+          "id": "2",
+          "username": "jane_doe"
+        },
+        "createdAt": "2023-04-11"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "The Art of Italian Pasta",
+    "imageUrl": "/images/articles/2/main.jpeg",
+    "content": "Pasta is a staple in Italian cuisine...",
+    "author": {
+      "id": "1",
+      "username": "john_doe"
+    },
+    "publishedDate": "2023-04-12",
+    "tags": [
+      {
+        "id": "3",
+        "name": "Italian"
+      },
+      {
+        "id": "4",
+        "name": "Pasta"
+      }
+    ],
+    "comments": [
+      {
+        "id": "2",
+        "content": "I love pasta! Thanks for sharing.",
+        "author": {
+          "id": "2",
+          "username": "jane_doe"
+        },
+        "createdAt": "2023-04-13"
+      }
+    ]
+  }
+]
