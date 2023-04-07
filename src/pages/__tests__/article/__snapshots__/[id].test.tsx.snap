@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticlePage matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="bg-gray-800 text-white p-4"
+  >
+    <nav>
+      <a
+        href="/"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Home
+        </span>
+      </a>
+      <a
+        href="/recipes"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Recipes
+        </span>
+      </a>
+      <a
+        href="/articles"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Articles
+        </span>
+      </a>
+      <a
+        href="/about"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          About
+        </span>
+      </a>
+      <a
+        href="/contact"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Contact
+        </span>
+      </a>
+    </nav>
+  </header>
+  <main
+    class="p-4"
+  >
+    <section
+      class="my-16"
+    >
+      <a
+        href="/articles"
+      >
+        <span
+          class="inline-flex items-center text-blue-500 hover:text-blue-700 mb-8"
+        >
+          <svg
+            class="h-6 w-6 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 17l-5-5m0 0l5-5m-5 5h12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+          Back to List
+        </span>
+      </a>
+      <div
+        class="mb-8"
+      >
+        <img
+          alt="Featured image for Exploring the Flavors of Thai Cuisine"
+          class="w-full h-96 object-cover"
+          src="/images/articles/1/main.jpeg"
+        />
+      </div>
+      <div
+        class="mb-8"
+      >
+        <h1
+          class="text-3xl font-bold"
+        >
+          Exploring the Flavors of Thai Cuisine
+        </h1>
+        <div
+          class="text-sm text-gray-500 mt-2"
+        >
+          <span>
+            By john_doe
+          </span>
+          <span>
+             • 
+          </span>
+          <span>
+            Posted on 2023-04-10
+          </span>
+          <span>
+             • 
+          </span>
+          <span>
+            Tags: 
+            <span>
+              Thai, 
+            </span>
+            <span>
+              Cuisine
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="mb-8 prose"
+      >
+        <p>
+          Thai cuisine is known for its bold flavors...
+        </p>
+      </div>
+      <div
+        class="mb-8"
+      >
+        <h2
+          class="text-2xl font-bold mb-4"
+        >
+          Comments
+        </h2>
+      </div>
+    </section>
+  </main>
+  <footer
+    class="bg-gray-800 text-white p-4"
+  >
+    <p>
+      © 2023 PanPrzyGarach
+    </p>
+  </footer>
+</DocumentFragment>
+`;

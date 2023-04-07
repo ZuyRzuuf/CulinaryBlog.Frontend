@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@/components/Layout';
-import { GetServerSideProps, GetServerSidePropsContext } from 'next';
+import {GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult} from 'next';
 import { Recipe } from '@/types/recipe';
 import mockRecipesData from '@/data_mocks/recipes.json';
 import BackToList from "@/components/BackToList";
@@ -69,7 +69,7 @@ const RecipePage: React.FC<RecipePageProps> = ({ recipe }) => {
 
 export const getServerSideProps: GetServerSideProps<RecipePageProps> = async (
     context: GetServerSidePropsContext
-) => {
+): Promise<GetServerSidePropsResult<RecipePageProps>> => {
     const recipeId = context.params?.id;
     const recipe = mockRecipesData.find((recipe) => recipe.id === recipeId);
 
