@@ -8,7 +8,7 @@ const IndexPage = () => {
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="container mx-auto px-4 h-full flex items-center justify-center">
                     <div>
-                        <h1 className="text-4xl font-bold">PanPrzyGarach</h1>
+                        <h1 className="text-4xl font-bold">Pan Przy Garach</h1>
                         <p className="text-xl mt-2">Discover delicious recipes and culinary inspiration</p>
                     </div>
                 </div>
