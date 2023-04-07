@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipesPage matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="bg-gray-800 text-white p-4"
+  >
+    <nav>
+      <a
+        href="/"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Home
+        </span>
+      </a>
+      <a
+        href="/recipes"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Recipes
+        </span>
+      </a>
+      <a
+        href="/articles"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Articles
+        </span>
+      </a>
+      <a
+        href="/about"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          About
+        </span>
+      </a>
+      <a
+        href="/contact"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Contact
+        </span>
+      </a>
+    </nav>
+  </header>
+  <main
+    class="p-4"
+  >
+    <section
+      class="my-16"
+    >
+      <h1
+        class="text-3xl font-bold mb-8"
+      >
+        Recipes
+      </h1>
+      <div
+        class="mb-8"
+      />
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <a
+          href="/recipe/1"
+        >
+          <span
+            class="block bg-white shadow-lg rounded-lg overflow-hidden"
+          >
+            <img
+              alt="Spaghetti Carbonara"
+              class="w-full h-56 object-cover"
+              src="/images/recipes/1/main.jpeg"
+            />
+            <div
+              class="p-4"
+            >
+              <h2
+                class="text-xl font-bold mb-2"
+              >
+                Spaghetti Carbonara
+              </h2>
+              <div
+                class="text-sm text-gray-500"
+              >
+                <span>
+                  Pasta
+                </span>
+                <span>
+                   • 
+                </span>
+                <span>
+                  Italian
+                </span>
+                <span>
+                   • 
+                </span>
+                <span>
+                  Boiling
+                </span>
+              </div>
+            </div>
+          </span>
+        </a>
+        <a
+          href="/recipe/2"
+        >
+          <span
+            class="block bg-white shadow-lg rounded-lg overflow-hidden"
+          >
+            <img
+              alt="Vegetarian Stir Fry"
+              class="w-full h-56 object-cover"
+              src="images/recipes/2/main.jpeg"
+            />
+            <div
+              class="p-4"
+            >
+              <h2
+                class="text-xl font-bold mb-2"
+              >
+                Vegetarian Stir Fry
+              </h2>
+              <div
+                class="text-sm text-gray-500"
+              >
+                <span>
+                  Main Course
+                </span>
+                <span>
+                   • 
+                </span>
+                <span>
+                  Asian
+                </span>
+                <span>
+                   • 
+                </span>
+                <span>
+                  Stir Frying
+                </span>
+              </div>
+            </div>
+          </span>
+        </a>
+      </div>
+      <div
+        class="mt-8"
+      />
+    </section>
+  </main>
+  <footer
+    class="bg-gray-800 text-white p-4"
+  >
+    <p>
+      © 2023 PanPrzyGarach
+    </p>
+  </footer>
+</DocumentFragment>
+`;

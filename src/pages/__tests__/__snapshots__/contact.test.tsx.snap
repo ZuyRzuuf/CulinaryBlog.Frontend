@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactPage matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="bg-gray-800 text-white p-4"
+  >
+    <nav>
+      <a
+        href="/"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Home
+        </span>
+      </a>
+      <a
+        href="/recipes"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Recipes
+        </span>
+      </a>
+      <a
+        href="/articles"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Articles
+        </span>
+      </a>
+      <a
+        href="/about"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          About
+        </span>
+      </a>
+      <a
+        href="/contact"
+      >
+        <span
+          class="mx-2 cursor-pointer"
+        >
+          Contact
+        </span>
+      </a>
+    </nav>
+  </header>
+  <main
+    class="p-4"
+  >
+    <section
+      class="my-16"
+    >
+      <h1
+        class="text-3xl font-bold mb-8"
+      >
+        Contact Us
+      </h1>
+      <p
+        class="text-lg mb-8"
+      >
+        If you have any questions, suggestions, or feedback, please feel free to get in touch with us. We'd love to hear from you!
+      </p>
+      <form>
+        <div
+          class="mb-4"
+        >
+          <label
+            class="block text-sm font-medium mb-2"
+            for="name"
+          >
+            Name
+          </label>
+          <input
+            class="border border-gray-300 w-full p-2 rounded"
+            id="name"
+            type="text"
+          />
+        </div>
+        <div
+          class="mb-4"
+        >
+          <label
+            class="block text-sm font-medium mb-2"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="border border-gray-300 w-full p-2 rounded"
+            id="email"
+            type="email"
+          />
+        </div>
+        <div
+          class="mb-4"
+        >
+          <label
+            class="block text-sm font-medium mb-2"
+            for="subject"
+          >
+            Subject
+          </label>
+          <input
+            class="border border-gray-300 w-full p-2 rounded"
+            id="subject"
+            type="text"
+          />
+        </div>
+        <div
+          class="mb-4"
+        >
+          <label
+            class="block text-sm font-medium mb-2"
+            for="message"
+          >
+            Message
+          </label>
+          <textarea
+            class="border border-gray-300 w-full p-2 rounded"
+            id="message"
+            rows="5"
+          />
+        </div>
+        <button
+          class="bg-blue-600 text-white px-4 py-2 rounded"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer
+    class="bg-gray-800 text-white p-4"
+  >
+    <p>
+      © 2023 PanPrzyGarach
+    </p>
+  </footer>
+</DocumentFragment>
+`;

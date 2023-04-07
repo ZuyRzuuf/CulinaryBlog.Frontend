@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@/components/Layout';
-import { GetServerSideProps, GetServerSidePropsContext } from "next";
+import {GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult} from "next";
 import { Article } from '@/types/article';
 import mockArticlesData from '@/data_mocks/articles.json';
 import BackToList from "@/components/BackToList";
@@ -55,7 +55,7 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ article }) => {
 
 export const getServerSideProps: GetServerSideProps<ArticlePageProps> = async (
     context: GetServerSidePropsContext
-) => {
+): Promise<GetServerSidePropsResult<ArticlePageProps>> => {
     const articleId = context.params?.id;
     const article = mockArticlesData.find((article) => article.id === articleId);
 

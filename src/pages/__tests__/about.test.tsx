@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
-import IndexPage from '../index';
+import AboutPage from '../about';
 
-describe('IndexPage', () => {
+describe('AboutPage', () => {
     it('matches snapshot', () => {
-        const { asFragment } = render(<IndexPage />);
+        const { asFragment } = render(<AboutPage />);
         expect(asFragment()).toMatchSnapshot();
     });
 });
