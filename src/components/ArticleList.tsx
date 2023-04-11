@@ -7,7 +7,7 @@ interface ArticleListProps {
 }
 const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div data-at="articles-list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {articles.map((article: Article) => (
                 <Link href={`/article/${article.id}`} key={article.id}>
                     <span className="block bg-white shadow-lg rounded-lg overflow-hidden">
